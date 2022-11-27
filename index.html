@@ -1,4 +1,4 @@
-﻿
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -122,13 +122,12 @@
                             <div class="col-md-5 col-md-offset-1">
                                 <h2 class="mb50"><span class="theme-accent-color">Nouveauté</span></h2>
                                 <p class="lead" id="news-lead">Aucune nouveauté pour le moment.</p>
-                                <p id="news-date"><img src="assets/img/team/author-news.jpg" class="img-news"> TheBacou - Le 01/01/1970</p>
+                                <p id="news-date"><img src="assets/img/team/author-news.jpg" class="img-news"> TheBacou - Le 27/11/2022</p>
                             </div>
 
                             <div class="col-md-5">
-                                <h2 class="mb50">Questions <span class="theme-accent-color">Réponses</span> ?</h2>
-                                <p class="lead">Toutes vos questions sont propablement déjà disponnible avec une réponse complète ! Je vous invite donc à venir rechercher vos questions sur la page <a href="#">Questions Réponses</a>.</p>
-                                <p>Si vos questions sont introuvable, je vous invite donc à venir nous la poser sur notre <a href="https://discord.gg/NJE4q4XFYR">Discord</a>. Nous pourrons ainsi vous répondre et ajouter votre question à notre site.</p>
+                                <h2 class="mb50">Plus <span class="theme-accent-color">D'informations</span> ?</h2>
+                                <p class="lead">Pour avoir plus d'informations, et/ou savoir l'avancement des projets rejoignez notre <a href="https://discord.gg/NJE4q4XFYR">Discord</a>.</p>
                             </div>
                         </div>
                     </div>
@@ -150,6 +149,12 @@
                         <ul class="list-inline social-links wow fadeIn" data-wow-delay="0.2s">
                             <li>
                                 <a href="https://discord.gg/fTmhnFHuGW" target="blank"><i class="fab fa-discord"></i></a>
+                            </li>
+                            <li>
+                                <a href="mailto:contact@redgear.tk" target="blank"><i class="fa fa-envelope"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/RedGear-Studio" target="blank"><i class="fab fa-github"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -183,17 +188,6 @@
                 scrollTop: 0
             }, 700);
         
-            const xhr = new XMLHttpRequest();
-            xhr.onreadystatechange = () => {
-                if (xhr.readyState === 4) {
-                    var data = JSON.parse(xhr.response)
-                    document.getElementById("news-lead").innerHTML = data.lead
-                    document.getElementById("news-date").innerHTML = document.getElementById("news-date").innerHTML.replace("01/01/1970", data.date)
-                }
-            }
-            xhr.open('GET', "https://raw.githubusercontent.com/TheBacou/PubOMax_Site/main/news/lasted.json", true);
-            xhr.send();
-
             jQuery('#headerwrap').backstretch([
                 "assets/img/bg/bg1.jpg",
             ], {duration: 8000, fade: 500});
