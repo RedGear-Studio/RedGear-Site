@@ -30,7 +30,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/RedGear-Studio/Reg-Lang">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="https://github.com/RedGear-Studio/Reg-Lang/images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Reg Lang</h3>
