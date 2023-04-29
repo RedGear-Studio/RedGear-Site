@@ -1,203 +1,135 @@
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
+﻿<html><head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="assets/img/ico/favicon.ico">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/ico/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/ico/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/ico/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" href="assets/img/ico/apple-touch-icon-57x57.png">
-    <meta name="description" content="RedGear Studio is a community of passionate developers who create open source tools and applications for the community. We are committed to creating high-quality software and sharing our knowledge with others.">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>RedGear Studio</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/animate.css" rel="stylesheet">
-    <link href="assets/css/plugins.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="assets/css/style.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link href="assets/css/pe-icons.css" rel="stylesheet">
-
+    
+    <meta name="theme-color" content="#00FFFF">
+    <link rel="icon" type="image/png" sizes="300x250" href="https://cdn.discordapp.com/icons/880133347446247574/d307f5d276d840ed87033497f24f034a.png?size=4096">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alfa+Slab+One">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
-<body id="page-top" class="regular-navigation">
+<body style="background-color: var(--background);">
+    <div id="top" style="height: 12px;">
+        <nav class="navbar navbar-light navbar-expand fixed-top" style="color: var(--main-color);border-top-width: 6px;border-top-style: solid;background: var(--background);">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#" style="color: var(--main-color);font-family: 'Alfa Slab One', cursive;">RedGear Studio</a>
+                <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    </div>
+    </nav>
+    </div>
+    <header class="d-xl-flex flex-column justify-content-xl-center align-items-xl-center" style="height: 418px;text-align: center;margin: 55px;"><img class="rounded" src="https://cdn.discordapp.com/icons/880133347446247574/d307f5d276d840ed87033497f24f034a.png?size=4096" width="150" height="150" style="margin-top: 30px;">
+        <h1 class="d-xl-flex justify-content-xl-start" style="color: var(--text-color);">RedGear Studio</h1>
+        <p style="color: var(--secondary-text-color);">Little description, hmm ?</p>
+        <div class="tada animated"><div role="group" class="btn-group">
+            <a href="https://discord.gg/fTmhnFHuGW" class="btn btn-primary shadow-none" type="button" style="margin: 5px;background-color: var(--main-color);border-color: var(--main-color);border-radius: 10px;">Discord</a>
 
-
-    <div class="master-wrapper">
-
-        <div class="preloader">
-            <div class="preloader-img">
-            	<span class="loading-animation animate-flicker"><img src="assets/img/loading.GIF" alt="loading" /></span>
+    <a href="https://github.com/RedGear-Studio" class="btn btn-primary shadow-none" type="button" style="margin: 5px;background-color: var(--main-color);border-color: var(--main-color);border-radius: 10px;">Github</a></div></div></header>
+    <div id="feature" style="height: 90px;background: var(--secondary);"><div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="var(--background)" fill-opacity="1" d="M0,96L40,112C80,128,160,160,240,144C320,128,400,64,480,48C560,32,640,64,720,69.3C800,75,880,53,960,58.7C1040,64,1120,96,1200,96C1280,96,1360,64,1400,48L1440,32L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>
+        </svg>
+    </div>
+</div>
+    <div class="features-boxed" style="background: var(--secondary);">
+        <div class="container" style="color: var(--main-color);">
+            <div class="intro">
+                <h2 class="text-center" style="color: var(--text-color);">Main projects</h2>
+            </div>
+            <div class="row justify-content-center features">
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div id="features" class="box">
+                        <i class="fa fa-connectdevelop icon" style="color: var(--main-color);"></i>
+                        <h3 class="name">Programming language</h3>
+                        <p class="description" style="color: var(--secondary-text-color);">Huh ?<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div id="features" class="box">
+                        
+                        <i class="fa fa-gamepad icon" style="color: var(--main-color);"></i><h3 class="name">Morpg</h3>
+                        <p class="description" style="color: var(--secondary-text-color);">A game<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div id="features" class="box"><i class="fa fa-smile-o icon" style="color: var(--main-color);"></i>
+                        <h3 class="name">?</h3>
+                        <p class="description" style="color: var(--secondary-text-color);">?<br></p>
+                    </div>
+                </div>
             </div>
         </div>
+        <div>
+        </div>
+    </div>
+    <div style="background-color: var(--background);">
+        <div style="height: 150px; overflow: hidden;">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M-41.53,-9.56 C167.83,173.98 302.14,-60.89 534.09,89.10 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: var(--secondary);"></path>
+            </svg>
+        </div>
+    </div>
+    <div id="commands">
+        <div class="container">
+  <h2>?</h2>
+  <div class="accordion">
+         
+    <!-- --- Si vous voulez +, copiez simplement le code suivant à partir d'ici -- -->
+          <div class="accordion-item">
+      <button id="accordion-button-1" aria-expanded="false">
+        <span class="accordion-title">??</span>
+        <span class="icon" aria-hidden="true"></span>
+    </button>
+      <div class="accordion-content">
+        <p>???</p>      </div>
+    </div>
+    <!-- --- ici :D -- -->
+    <!-- --- Si vous voulez +, copiez simplement le code suivant à partir d'ici -- -->
+          
+    <!-- --- ici :D -- -->
+          
 
-        <!-- Navigation -->
-        <nav class="navbar navbar-default navbar-fixed-top fadeInDown" data-wow-delay="0.2s">
-            <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header page-scroll">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navigation">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand smoothie" href="index.html"> <span class="theme-accent-color">Red</span>Gear<span class="theme-accent-color"></span></a>
-                </div>
+  </div>
+</div></div>
+<!-- --- Tu devras juste modif les https://discord.gg/......... -- -->
 
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="main-navigation">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="/" class="page-scroll">Accueil</a></li>  
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">Projets <span class="pe-7s-angle-down"></span></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="/Morpg.html">Morpg</a></li>
-                                <li><a href="/Language.html">Language De Développement</a></li>
-                                <li><a href="javascript:alert('Nothing yet...')">Game Engine</a></li>
-                            </ul>
-                        </li> 
-
-                        <!-- <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">Extras <span class="pe-7s-angle-down"></span></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="404.html">404</a></li>
-                            </ul>
-                        </li> -->
-
-                    </ul>
-
-                </div>
-                <!-- /.navbar-collapse -->         
-
+    <div class="team-clean" style="background: rgba(0,0,0,0);display: none;">
+        <div class="container" style="filter: blur(0px);padding-bottom: 0px;">
+            <h3 class="text-center name" style="color: var(--secondary-text-color)">Ours partners</h3>
+            <div class="intro"></div>
+            <div class="row row-cols-4 d-flex d-xl-flex justify-content-center justify-content-xl-center people" style="padding-bottom: 0px;">
+                <div class="col-auto col-md-6 col-lg-4 yeet"><a href="https://discord.gg/" target="_blank">
+                    <img class="rounded-circle partner" src="https://cdn.discordapp.com/icons/679780145313480735/a_0cd3b55c7404471214d59aaec23f53a5.png?size=4096"><h3 class="text-center name" style="color: var(--secondary-text-color)">Okoura</h3></a></div>
+                <div class="col-auto col-md-6 col-lg-4 yeet"><a href="https://discord.gg/" target="_blank">
+                    <img class="rounded-circle partner" src="https://media.discordapp.net/attachments/1012646731302834186/1069196041250930688/logo.png"></a></div>
+                <div class="col-auto col-md-6 col-lg-4 yeet"><a href="https://discord.gg/" target="_blank">
+                    <img class="rounded-circle partner" src="https://media.discordapp.net/attachments/1012646731302834186/1069196041250930688/logo.png"></a></div>
             </div>
-            <!-- /.container-fluid -->
-        </nav>
-
-        <!-- Header -->
-        <header id="headerwrap" class="backstretched fullheight">
-            <div class="container-fluid fullheight">
-                <div class="vertical-center row">
-                    <div class="col-sm-1 pull-left text-center slider-control match-height">
-                        <a href="#" style="display:none" class="prev-bs-slide vertical-center wow fadeInLeft" data-wow-delay="0.8s"><i class="fa fa-long-arrow-left"></i></a>
-                    </div>
-                    <div class="intro-text text-center smoothie col-sm-10 match-height">                    
-                        <div class="intro-heading wow fadeIn heading-font" data-wow-delay="0.8s"><img src="assets/img/intro-logo.png"></div>              
-                    </div>
-                    <div class="col-sm-1 pull-right text-center slider-control match-height">
-                        <a href="#" style="display:none" class="next-bs-slide vertical-center wow fadeInRight" data-wow-delay="0.8s"><i class="fa fa-long-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <section id="about" class="top-border-me">
-            <div class="section-inner">
-
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 text-center mb100">                        
-                            <h2 class="section-heading">Un accueil <span class="theme-accent-color">chaleureux</span></h2>
-                            <hr class="thin-hr">
-                            <h3 class="section-subheading secondary-font">Nous sommes très heureux de vous voir.</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-5 col-md-offset-1">
-                                <h2 class="mb50"><span class="theme-accent-color">Nouveauté</span></h2>
-                                <p class="lead" id="news-lead">Aucune nouveauté pour le moment.</p>
-                                <p id="news-date"><img src="assets/img/team/author-news.jpg" class="img-news"> TheBacou - Le 27/11/2022</p>
-                            </div>
-
-                            <div class="col-md-5">
-                                <h2 class="mb50">Plus <span class="theme-accent-color">D'informations</span> ?</h2>
-                                <p class="lead">Pour avoir plus d'informations, et/ou savoir l'avancement des projets rejoignez notre <a href="https://discord.gg/NJE4q4XFYR">Discord</a>.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-
-    
-
-        <footer class="white-wrapper">
-            <div class="container-fluid">
-                <div class="row text-center">
-                    <div class="col-md-12 wow fadeIn mb30" data-wow-delay="0.2s">
-                        <span class="copyright">RedGear Copyright <span id="copyrightYear">2021</span>. Designed by TheBacou.</span>
-                    </div>
-                    <div class="col-md-12">
-                        <ul class="list-inline social-links wow fadeIn" data-wow-delay="0.2s">
-                            <li>
-                                <a href="https://discord.gg/fTmhnFHuGW" target="blank"><i class="fab fa-discord"></i></a>
-                            </li>
-                            <li>
-                                <a href="mailto:contact@redgear.tk" target="blank"><i class="fa fa-envelope"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/RedGear-Studio" target="blank"><i class="fab fa-github"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </footer>
-
-        <div id="bottom-frame"></div>
-
-        <a href="#" id="back-to-top"><i class="fa fa-long-arrow-alt-up"></i></a>
-
+        </div>
     </div>
 
-     <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/plugins.js"></script> 
-    <script src="assets/js/bootstrap.min.js"></script>
-    
-    <script src="assets/js/init.js"></script>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="var(--secondary)" fill-opacity="1" d="M0,160L48,154.7C96,149,192,139,288,154.7C384,171,480,213,576,218.7C672,224,768,192,864,181.3C960,171,1056,181,1152,192C1248,203,1344,213,1392,218.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    <div class="footer-dark" style="background: var(--secondary);padding-top: 0px;padding-bottom: 0px;">
+        <div class="container">
+            
+            <p class="copyright" style="color: var(--text-color);">RedGear Studio © 2021-2023</p>
+            <p class="copyright" style="color: var(--text-color);padding: 0px;">
+        </p></div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/Counting.js"></script>
+    <script src="assets/js/untitled.js"></script>
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    
-    <script type="text/javascript">
-        $(document).ready(function(){
-        'use strict';
-            $('html,body').animate({
-                scrollTop: 0
-            }, 700);
-        
-            jQuery('#headerwrap').backstretch([
-                "assets/img/bg/bg1.jpg",
-            ], {duration: 8000, fade: 500});
-        });
-	
-	window.onload = (event) => {
-				document.getElementById('copyrightYear').innerHTML = `2021-${new Date().getFullYear()}`;
-	}
-    </script>
 
-</body>
-
-</html>
+</body></html>
