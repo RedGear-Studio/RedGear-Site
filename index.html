@@ -18,13 +18,19 @@
         <nav class="navbar navbar-light navbar-expand fixed-top" style="color: var(--main-color);border-top-width: 6px;border-top-style: solid;background: var(--background);">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#" style="color: var(--main-color);font-family: 'Alfa Slab One', cursive;">RedGear Studio</a>
-                <button data-toggle="collapse" class="navbar-toggler" style="display: block;" data-target="#navcol-1">
+                <button  onclick="navIconChange(this)" data-toggle="collapse" class="navbar-toggler" style="display: block;" data-target="#navcol-1">
                     <span class="sr-only">Toggle navigation</span>
-                    <span style="font-size: x-large; color: #f54254" class="fa fa-bars" onclick="navIconChange(this)"></span>
+                    <span style="font-size: x-large; color: #f54254;" class="fa fa-bars"></span>
                 </button>
+            </div>
+        </nav>
+        <nav id="navbarList" class="navbar navbar-light navbar-expand fixed-bottomtop" style="display: none; color: var(--main-color);border-top-width: 2px;border-top-style: solid;background: var(--background);">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#" style="color: var(--main-color);font-family: 'Alfa Slab One', cursive;">RedGear Studio</a>
+            </div>
+        </nav>
     </div>
-    </nav>
-    </div>
+    
     <header class="d-xl-flex flex-column justify-content-xl-center align-items-xl-center" style="height: 418px;text-align: center;margin: 55px;"><img class="rounded" src="https://cdn.discordapp.com/icons/880133347446247574/d307f5d276d840ed87033497f24f034a.png?size=4096" width="150" height="150" style="margin-top: 30px;">
         <h1 class="d-xl-flex justify-content-xl-start" style="color: var(--text-color);">RedGear Studio</h1>
         <p style="color: var(--secondary-text-color);">Little description, hmm ?</p>
@@ -132,8 +138,20 @@
     <script src="assets/js/untitled.js"></script>
     <script>
         function navIconChange(icon) {
-            let newIcon = icon.className === 'fa fa-bars icon' ? 'fa fa-close icon' : 'fa fa-bars icon'
+            let newIcon = icon.className === 'fa fa-bars' ? 'fa fa-close' : 'fa fa-bars'
             icon.className = newIcon
+        }
+
+        function navIconChange(icon) {
+            let list = document.getElementById("navbarList")
+
+            if (icon.className === "fa fa-close") {
+                icon.className = "fa fa-bars"
+                list.style.display = "none"
+            } else {
+                icon.className = "fa fa-close"
+                list.style.display = "block"
+            }
         }
     </script>
 
