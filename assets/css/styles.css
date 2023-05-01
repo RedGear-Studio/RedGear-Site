@@ -21,14 +21,6 @@
   background: var(--main-color);
 }
 
-.fixed-bottomtop {
-  position: fixed;
-  top: 60px;
-  right: 0;
-  left: 0;
-  z-index: 1030;
-}
-
 .footer-dark {
   padding: 50px 0;
 }
