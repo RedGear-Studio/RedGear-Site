@@ -20,7 +20,7 @@
                 <a class="navbar-brand" href="#" style="color: var(--main-color);font-family: 'Alfa Slab One', cursive;">RedGear Studio</a>
                 <button  onclick="navIconChange(this)" data-toggle="collapse" class="navbar-toggler" style="display: block;" data-target="#navcol-1">
                     <span class="sr-only">Toggle navigation</span>
-                    <span style="font-size: x-large; color: #f54254;" class="fa fa-bars"></span>
+                    <span id="navButton" style="font-size: x-large; color: #f54254;" class="fa fa-bars"></span>
                 </button>
             </div>
         </nav>
@@ -137,13 +137,9 @@
     <script src="assets/js/Counting.js"></script>
     <script src="assets/js/untitled.js"></script>
     <script>
-        function navIconChange(icon) {
-            let newIcon = icon.className === 'fa fa-bars' ? 'fa fa-close' : 'fa fa-bars'
-            icon.className = newIcon
-        }
-
-        function navIconChange(icon) {
+        function navIconChange() {
             let list = document.getElementById("navbarList")
+            let icon = document.getElementById("navButton")
 
             if (icon.className === "fa fa-close") {
                 icon.className = "fa fa-bars"
