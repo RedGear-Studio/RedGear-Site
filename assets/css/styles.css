@@ -282,10 +282,3 @@ div#features:hover {
   text-align: center;
   padding: 18px;
 }
-
-.separator {
-  background: url("https://img.icons8.com/ios/50/f54254/vertical-line.png");
-  display: inline-block;
-  width: 50px;
-  height: 25px;
-}
