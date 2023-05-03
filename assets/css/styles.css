@@ -21,13 +21,6 @@
   background: var(--main-color);
 }
 
-.fa-separator {
-  background: url("https://img.icons8.com/ios/50/f54254/vertical-line.png");
-  display: inline-block;
-  width: 50px;
-  height: 25px;
-}
-
 .footer-dark {
   padding: 50px 0;
 }
@@ -290,3 +283,9 @@ div#features:hover {
   padding: 18px;
 }
 
+.separator {
+  background: url("https://img.icons8.com/ios/50/f54254/vertical-line.png");
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+}
