@@ -21,23 +21,6 @@
   background: var(--main-color);
 }
 
-.navbar-brandList {
-  color: var(--main-color);
-  font-family: 'Alfa Slab One', cursive; 
-  font-size: medium;
-  display: inline-block;
-  padding: .3125rem;
-  margin-right: 1rem;
-  line-height: inherit;
-  white-space: nowrap
-}
-
-.navbar-brand:hover {
-  color: var(--background);
-  background-color: var(--main-color);
-  border-radius: 10px;
-}
-
 .footer-dark {
   padding: 50px 0;
 }
