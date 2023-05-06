@@ -30,15 +30,15 @@ xhr.send();
 
 
 // Auto update the description on the Main project
-const xhr = new XMLHttpRequest();
-xhr.onreadystatechange = () => {
-    if (xhr.readyState === 4) {
-        var data = JSON.parse(xhr.response)
+const xhr2 = new XMLHttpRequest();
+xhr2.onreadystatechange = () => {
+    if (xhr2.readyState === 4) {
+        var data = JSON.parse(xhr2.response)
         for (var i in data) {
             const elemet = document.getElementByName("description-" + data[i].name) || null
             if (element) element.innerText = data[i].description
         }
     }
 }
-xhr.open('GET', "https://api.github.com/users/RedGear-Studio/repos", true);
-xhr.send();
+xhr2.open('GET', "https://api.github.com/users/RedGear-Studio/repos", true);
+xhr2.send();
