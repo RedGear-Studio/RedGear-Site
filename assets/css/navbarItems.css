@@ -1,0 +1,17 @@
+.navbar-brandList {
+  color: var(--main-color);
+  font-family: 'Alfa Slab One', cursive;
+  font-size: medium;
+  display: inline-block;
+  padding: .3125rem;
+  margin-right: 1rem;
+  line-height: inherit;
+  white-space: nowrap
+}
+
+.navbar-brandList:hover {
+  color: var(--background);
+  background-color: var(--main-color);
+  border-radius: 10px;
+}
+
