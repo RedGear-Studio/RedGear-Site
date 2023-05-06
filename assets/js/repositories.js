@@ -14,16 +14,29 @@ function navIconChange() {
     }
 }
 
-module.exports = {
-    bio() {
-        const xhr = new XMLHttpRequest();
-        xhr.onreadystatechange = () => {
-            if (xhr.readyState === 4) {
-                var data = JSON.parse(xhr.response)
-                document.getElementById("news-lead").innerHTML
+function bio() {
+    const xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = () => {
+        if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.response)
+            document.getElementsByName("bio")[0].innerText = data.bio
+        }
+    }
+    xhr.open('GET', "https://api.github.com/users/RedGear-Studio", true);
+    xhr.send();
+}
+
+function repositoriesDescription() {
+    const xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = () => {
+        if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.response)
+            for (var i in data) {
+                const elemet = document.getElementByName("description-"+data[i].name) || null
+                if (element) element.innerText = data[i].description
             }
         }
-        xhr.open('GET', "https://api.github.com/users/RedGear-Studio", true);
-        xhr.send();
     }
+    xhr.open('GET', "https://api.github.com/users/RedGear-Studio/repos", true);
+    xhr.send();
 }
