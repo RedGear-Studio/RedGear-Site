@@ -15,6 +15,10 @@ function navIconChange() {
 }
 
 
+$(window).on("load", function() {
+    console.log("test")
+});
+
 
 // Auto update the bio on the Title page
 const xhr = new XMLHttpRequest();
@@ -35,7 +39,7 @@ xhr2.onreadystatechange = () => {
     if (xhr2.readyState === 4) {
         var data = JSON.parse(xhr2.response)
         for (var i in data) {
-            const elemet = document.getElementByName("description-" + data[i].name) || null
+            const element = document.getElementByName("description-" + data[i].name) || null
             if (element) element.innerText = data[i].description
         }
     }
