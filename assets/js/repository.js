@@ -15,7 +15,7 @@ function navIconChange() {
 }
 
 
-$(window).on("load", function() {
+jQuery(window).on("load", function() {
     console.log("test")
 });
 
