@@ -39,7 +39,7 @@ xhr2.onreadystatechange = () => {
     if (xhr2.readyState === 4) {
         var data = JSON.parse(xhr2.response)
         for (var i in data) {
-            const element = document.getElementByName("description-" + data[i].name) || null
+            const element = document.getElementsByName("description-" + data[i].name) || null
             if (element) element.innerText = data[i].description
         }
     }
