@@ -28,11 +28,15 @@ xhr.send();
 // Auto update the description on the Main project
 const xhr2 = new XMLHttpRequest();
 xhr2.onreadystatechange = () => {
+    console.log(load)
     if (xhr2.readyState === 4) {
         var data = JSON.parse(xhr2.response)
         var repoList = []
+        console.log(repoList)
         for (var i in data) {
+            console.log(data[i].name)
             if (repository.list.includes(data[i].name)) {
+                console.log("pushed")
 
                 repoList.push(html(data[i].name, data[i].description))
             }
