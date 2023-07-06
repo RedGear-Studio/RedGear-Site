@@ -1,5 +1,7 @@
-const repository = fetch("assets/json/repository.json").then(resp => resp.json());
-
+(async () => {
+    const repositoryFetch = await fetch("assets/json/repository.json");
+    const repository = await repository.json();
+})();
 
 function html(name, description) {
     var content = repository.html.join("")
