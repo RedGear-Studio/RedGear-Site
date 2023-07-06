@@ -37,7 +37,10 @@ xhr2.onreadystatechange = () => {
                 repoList.push(html(data[i].name, data[i].description))
             }
         }
+        console.log(repoList)
+        console.log(document.getElementsByName("mainprojects")[0])
         document.getElementsByName("mainprojects")[0].innerHTML = repoList.join("")
+        console.log(document.getElementsByName("mainprojects")[0])
     }
 }
 xhr2.open('GET', "https://api.github.com/users/RedGear-Studio/repos", true);
