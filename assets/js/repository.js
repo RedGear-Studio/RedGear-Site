@@ -6,28 +6,28 @@ function html(name, description) {
 
 
 jQuery(window).on("load", function() {
+
+
+    // Auto update the description on the Main project
+    const xhr2 = new XMLHttpRequest();
+    xhr2.onreadystatechange = () => {
+        if (xhr2.readyState === 4) {
+            var data = JSON.parse(xhr2.response)
+            var repoList = []
+            for (var i in data) {
+                if (repository.list.includes(data[i].name)) {
+    
+                    repoList.push(html(data[i].name, data[i].description))
+                }
+            }
+            document.getElementsByName("mainprojects")[0].innerHTML = repoList.join("")
+        }
+    }
+    xhr2.open('GET', "https://api.github.com/users/RedGear-Studio/repos", true);
+    xhr2.send();
     console.log("test")
 });
 
-
-
-// Auto update the description on the Main project
-const xhr2 = new XMLHttpRequest();
-xhr2.onreadystatechange = () => {
-    if (xhr2.readyState === 4) {
-        var data = JSON.parse(xhr2.response)
-        var repoList = []
-        for (var i in data) {
-            if (repository.list.includes(data[i].name)) {
-
-                repoList.push(html(data[i].name, data[i].description))
-            }
-        }
-        document.getElementsByName("mainprojects")[0].innerHTML = repoList.join("")
-    }
-}
-xhr2.open('GET', "https://api.github.com/users/RedGear-Studio/repos", true);
-xhr2.send();
 
 
 // Auto update the bio on the Title page
