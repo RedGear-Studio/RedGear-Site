@@ -1,4 +1,4 @@
-const repository = require("assets/json/repository.json")
+import repository from "assets/json/repository.json"
 function html(name, description) {
     var content = repository.html.join("")
     return content.replace("{name}", name).replace("{description}", description)
