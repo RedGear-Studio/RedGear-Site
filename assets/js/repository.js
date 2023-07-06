@@ -27,8 +27,8 @@ xhr.send();
 
 // Auto update the description on the Main project
 const xhr2 = new XMLHttpRequest();
+console.log(xhr2)
 xhr2.onreadystatechange = () => {
-    document.getElementsByName("mainprojects")[0].innerHTML = "rez"
     if (xhr2.readyState === 4) {
         var data = JSON.parse(xhr2.response)
         var repoList = []
@@ -41,5 +41,8 @@ xhr2.onreadystatechange = () => {
         document.getElementsByName("mainprojects")[0].innerHTML = repoList.join("")
     }
 }
+console.log(xhr2)
 xhr2.open('GET', "https://api.github.com/users/RedGear-Studio/repos", true);
+console.log(xhr2)
 xhr2.send();
+console.log(xhr2)
