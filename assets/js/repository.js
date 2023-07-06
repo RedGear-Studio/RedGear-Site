@@ -45,7 +45,7 @@ const xhr2 = new XMLHttpRequest();
 xhr2.onreadystatechange = () => {
     if (xhr2.readyState === 4) {
         var data = JSON.parse(xhr2.response)
-        var repoList = []
+        var repoList = ["t"]
         for (var i in data) {
             if (repository.list.includes(data[i].name)) {
 
