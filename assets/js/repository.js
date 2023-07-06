@@ -3,7 +3,7 @@ const fetchRepository = async () => {
   return result
 }
 
-const repository = fetchRepository()
+const repository = await fetchRepository()
 
 function html(name, description) {
     var content = repository.html.join("")
