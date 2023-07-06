@@ -1,17 +1,7 @@
-function navIconChange() {
-    let list = document.getElementById("navbarList")
-    let finish = document.getElementById("navbarListFinish")
-    let icon = document.getElementById("navButton")
-
-    if (icon.className === "fa fa-close") {
-        icon.className = "fa fa-bars"
-        list.style.display = "none"
-        finish.style.display = "none"
-    } else {
-        icon.className = "fa fa-close"
-        list.style.display = "block"
-        finish.style.display = "block"
-    }
+const repository = require("assets/json/repository.json")
+function html(name, description) {
+    var content = repository.html.join("")
+    return content.replace("{name}", name).replace("{description}", description)
 }
 
 
@@ -20,12 +10,14 @@ jQuery(window).on("load", function() {
 });
 
 
+
 // Auto update the bio on the Title page
 const xhr = new XMLHttpRequest();
 xhr.onreadystatechange = () => {
     if (xhr.readyState === 4) {
         var data = JSON.parse(xhr.response)
-        document.getElementsByName("bio")[0].innerText = data.bio
+        if (!data.bio) return;
+        else document.getElementsByName("bio")[0].innerText = data.bio
     }
 }
 xhr.open('GET', "https://api.github.com/users/RedGear-Studio", true);
@@ -38,10 +30,14 @@ const xhr2 = new XMLHttpRequest();
 xhr2.onreadystatechange = () => {
     if (xhr2.readyState === 4) {
         var data = JSON.parse(xhr2.response)
+        var repoList = []
         for (var i in data) {
-            const element = document.getElementsByName("description-" + data[i].name) || null
-            if (element) element.innerText = data[i].description
+            if (repository.list.includes(data[i].name)) {
+
+                repoList.push(html(data[i].name, data[i].description))
+            }
         }
+        document.getElementsByName("mainprojects")[0].innerHTML = repoList.join("")
     }
 }
 xhr2.open('GET', "https://api.github.com/users/RedGear-Studio/repos", true);

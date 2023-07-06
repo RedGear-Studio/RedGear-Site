@@ -1,0 +1,17 @@
+{
+
+    "list": [
+        "Atlas77",
+        "Realms-of-Power"
+    ],
+    "html": [
+        "<div class='col-sm-6 col-md-5 col-lg-4 item'>",
+        "<div id='features' class='box'>",
+        "<i class='fa fa-connectdevelop icon' style='color: var(--main-color);'></i>",
+        "<h3 class='name'>{name}</h3>",
+        "<p class='description' style='color: var(--secondary-text-color);'>",
+        "{description}",
+        "</p></div></div>"
+    ]
+}
+
