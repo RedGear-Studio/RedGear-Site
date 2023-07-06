@@ -28,9 +28,9 @@ xhr.send();
 // Auto update the description on the Main project
 const xhr2 = new XMLHttpRequest();
 xhr2.onreadystatechange = () => {
+    document.getElementsByName("mainprojects")[0].innerHTML = "rez"
     if (xhr2.readyState === 4) {
         var data = JSON.parse(xhr2.response)
-        document.getElementsByName("mainprojects")[0].innerHTML = "rez"
         var repoList = []
         for (var i in data) {
             if (repository.list.includes(data[i].name)) {
