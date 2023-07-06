@@ -1,5 +1,4 @@
-const repositoryFetch = await fetch("assets/json/repository.json");
-const repository = await repositoryFetch.json();
+const repository = fetch("assets/json/repository.json").then(resp => resp.json());
 
 
 function html(name, description) {
