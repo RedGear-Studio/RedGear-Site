@@ -26,7 +26,9 @@ xhr.send();
 
 
 // Auto update the description on the Main project
+console.log("r")
 const xhr2 = new XMLHttpRequest();
+console.log("r2")
 xhr2.onreadystatechange = () => {
     console.log(load)
     if (xhr2.readyState === 4) {
@@ -47,5 +49,8 @@ xhr2.onreadystatechange = () => {
         console.log(document.getElementsByName("mainprojects")[0])
     }
 }
+console.log("r3")
 xhr2.open('GET', "https://api.github.com/users/RedGear-Studio/repos", true);
+console.log("get")
 xhr2.send();
+console.log("send")
