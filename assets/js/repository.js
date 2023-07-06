@@ -1,7 +1,9 @@
-(async () => {
-    const repositoryFetch = await fetch("assets/json/repository.json");
-    const repository = await repository.json();
-})();
+const fetchRepository = async () => {
+  const result = await fetch("https://redgear.tk/assets/json/repository.json").then(rep => rep.json());
+  return result
+}()
+
+const repository = fetchRepository()
 
 function html(name, description) {
     var content = repository.html.join("")
