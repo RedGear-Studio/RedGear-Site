@@ -1,7 +1,7 @@
 const fetchRepository = async () => {
   const result = await fetch("https://redgear.tk/assets/json/repository.json").then(rep => rep.json());
   return result
-}()
+}
 
 const repository = fetchRepository()
 
