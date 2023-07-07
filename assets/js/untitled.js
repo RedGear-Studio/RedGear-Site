@@ -15,7 +15,7 @@ $(function() {
   });
 });
 
-const items = document.querySelectorAll(".accordion button");
+const items = document.querySelectorAll("#accordion-button");
 
 function toggleAccordion() {
   const itemToggle = this.getAttribute('aria-expanded');
