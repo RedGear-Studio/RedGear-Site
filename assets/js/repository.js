@@ -12,7 +12,7 @@ function html(repository, name, description) {
       repository.name.push(value.name)
       repository.icon[value.name] = value.icon
     }
-    await repositoryFetch.list.forEach(splitRepoList());
+    await repositoryFetch.list.forEach(splitRepoList);
 
     const xhr2 = new XMLHttpRequest();
     xhr2.onreadystatechange = async () => {
