@@ -5,6 +5,10 @@
             "icon": "fa fa-connectdevelop icon"
         },
         {
+            "name": "atlas-core",
+            "icon": "fa fa-connectdevelop icon"
+        },
+        {
             "name": "Realms-of-Power",
             "icon": "fa fa-gamepad icon"
         }
