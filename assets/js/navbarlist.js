@@ -22,12 +22,12 @@ jQuery(window).on("load", function () {
     console.log(window.mobileCheck()+" "+navbar)
 
     if (window.mobileCheck() === false) {
-console.log(navbar.style)
+console.log(navbar.style.right)
         navbar.style.right = "0"
-console.log(navbar.style)
+console.log(navbar.style.right)
     } else {
-console.log(navbar.style)
+console.log(navbar.style.width)
         navbar.style.width = "-moz-available"
-console.log(navbar.style)
+console.log(navbar.style.width)
     }
 });
