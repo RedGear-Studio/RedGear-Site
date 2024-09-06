@@ -19,11 +19,13 @@ jQuery(window).on("load", function () {
     };
 
     var navbar = window.document.getElementById("navbarList");
-    window.alert(window.mobileCheck())
+    window.alert(window.mobileCheck()+" "+navbar)
 
     if (window.mobileCheck() === false) {
         navbar.style.right = "0"
+window.alert(navbar.style)
     } else {
+window.alert(navbar)
         navbar.style.width = "-moz-available"
     }
 });
