@@ -19,13 +19,15 @@ jQuery(window).on("load", function () {
     };
 
     var navbar = window.document.getElementById("navbarList");
-    window.alert(window.mobileCheck()+" "+navbar)
+    console.log(window.mobileCheck()+" "+navbar)
 
     if (window.mobileCheck() === false) {
+console.log(navbar.style)
         navbar.style.right = "0"
-window.alert(navbar.style)
+console.log(navbar.style)
     } else {
-window.alert(navbar)
+console.log(navbar.style)
         navbar.style.width = "-moz-available"
+console.log(navbar.style)
     }
 });
