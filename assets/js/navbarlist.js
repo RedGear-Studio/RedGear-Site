@@ -19,6 +19,7 @@ jQuery(window).on("load", function () {
     };
 
     var navbar = window.document.getElementById("navbarList");
+    window.alert(window.mobileCheck())
 
     if (window.mobileCheck() === false) {
         navbar.style.right = "0"
