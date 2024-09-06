@@ -6,11 +6,11 @@ function html(repository, name, description) {
 }
 
 (async () => {
-    const repositoryFetch = await fetch("https://redgear.tk/assets/json/repository.json").then(rep => rep.json());
-    const repository = {name: [], icon: {"null": repositoryFetch.icons["null"] }, html: repositoryFetch.html}
+    const repositoryFetch = await fetch("https://redgear-studio.github.io/RedGear-Site/assets/json/repository.json").then(rep => rep.json());
+    const repository = { name: [], icon: { "null": repositoryFetch.icons["null"] }, html: repositoryFetch.html }
     function splitRepoList(value) {
-      repository.name.push(value.name)
-      repository.icon[value.name] = value.icon
+        repository.name.push(value.name)
+        repository.icon[value.name] = value.icon
     }
     await repositoryFetch.list.forEach(splitRepoList);
 
@@ -21,7 +21,7 @@ function html(repository, name, description) {
             var repoList = []
             for (var i in data) {
                 if (repository.name.includes(data[i].name)) {
-					var content = await html(repository, data[i].name, data[i].description)
+                    var content = await html(repository, data[i].name, data[i].description)
                     repoList.push(content)
                 }
             }
@@ -31,12 +31,6 @@ function html(repository, name, description) {
     xhr2.open('GET', "https://api.github.com/users/RedGear-Studio/repos", true);
     xhr2.send();
 })()
-
-
-jQuery(window).on("load", function() {
-    console.log("test")
-});
-
 
 
 // Auto update the bio on the Title page
