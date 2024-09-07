@@ -284,5 +284,5 @@ div#features:hover {
 }
 
 .viewmore:hover {
-  text-decoration: underline;
+  font-weight: bold;
 }
