@@ -2,11 +2,11 @@
     "list": [
         {
             "name": "Atlas77",
-            "icon": "fa fa-connectdevelop icon"
+            "icon": "fa fa-code icon"
         },
         {
             "name": "atlas-core",
-            "icon": "fa fa-code icon"
+            "icon": "fa fa-connectdevelop icon"
         },
         {
             "name": "Realms-of-Power",
