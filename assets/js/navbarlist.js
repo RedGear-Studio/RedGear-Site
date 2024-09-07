@@ -22,6 +22,7 @@ jQuery(window).on("load", function () {
 
     if (window.mobileCheck() === false) {
         navbar.style.right = "0"
-        navbar.style.width = ""
+    } else {
+        navbar.style.width = "100%"
     }
 });
