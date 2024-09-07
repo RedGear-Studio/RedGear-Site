@@ -20,6 +20,7 @@ jQuery(window).on("load", function () {
 
     var navbar = window.document.getElementById("navbarList");
     console.log(window.mobileCheck()+" "+navbar)
+    console.log(typeof window.mobileCheck())
 
     if (window.mobileCheck() === false) {
 console.log(navbar.style.right)
