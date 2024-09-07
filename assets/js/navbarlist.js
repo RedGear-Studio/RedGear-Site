@@ -24,8 +24,8 @@ jQuery(window).on("load", function () {
     if (window.mobileCheck() === false) {
 console.log(navbar.style.right)
         navbar.style.right = "0"
-console.log(navbar.style.right)
-    } else {
+    }
+    if (window.mobileCheck() === true) {
 console.log(navbar.style.width)
         navbar.style.width = "-moz-available"
 console.log(navbar.style.width)
