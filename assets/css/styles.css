@@ -283,3 +283,6 @@ div#features:hover {
   padding: 18px;
 }
 
+.viewmore:hover {
+  text-decoration: underline;
+}
