@@ -2,7 +2,7 @@ function html(repository, name, description) {
     var content = repository.html.join("")
     var icon = repository.icon["null"]
     if (repository.icon[name] !== null) icon = repository.icon[name]
-    return content.replace("{icon}", icon).replace("{name}", name).replace("{description}", description)
+    return content.replace("{icon}", icon).replaceAll("{name}", name).replace("{description}", description)
 }
 
 (async () => {
