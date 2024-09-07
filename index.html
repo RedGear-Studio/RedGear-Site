@@ -17,9 +17,9 @@
     <link rel="stylesheet" href="assets/css/navbarItems.css">
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/untitled.js"></script>
     <script src="assets/js/repository.js"></script>
     <script src="assets/js/navbarlist.js"></script>
+    <script src="assets/js/copyright.js"></script>
 </head>
 
 <body style="background-color: var(--background);">
@@ -37,7 +37,7 @@
             </div>
         </nav>
         <nav id="navbarList" class="navbar navbar-light navbar-expand"
-            style="display: none; position: fixed;top: 60px;background-color: var(--background);border-radius: 0px 0px 15px 15px;">
+            style="display: none; position: fixed;top: 60px;background-color: var(--background);border-radius: 0px 0px 15px 15px; z-index: 1030;">
             <div class="container-navList" id="container-navList"
                 style="background-color: var(--secondary);border-radius: 10px;">
                 <a class="navbar-brandList" target="_blank" href="https://github.com/RedGear-Studio/RedGear-TOS">
@@ -176,9 +176,7 @@
     <div class="footer-dark" style="background: var(--secondary);padding-top: 0px;padding-bottom: 0px;">
         <div class="container">
 
-            <p class="copyright" style="color: var(--text-color);">RedGear Studio © 2021-2023</p>
-            <p class="copyright" style="color: var(--text-color);padding: 0px;">
-            </p>
+            <p class="copyright" id="copyright" style="color: var(--text-color);">RedGear Studio © 2021-</p>
         </div>
     </div>
 
