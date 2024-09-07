@@ -24,7 +24,7 @@
         "<p class='description' style='color: var(--secondary-text-color);'>",
         "{description}",
         "</p>",
-        "<a style='color: var(----main-color);' href='/projects?name={name}' class='viewmore'>View more</a>",
+        "<a style='color: var(----main-color);' class='viewmore' href='/projects?name={name}'>View more</a>",
         "</div></div>"
     ]
 }
