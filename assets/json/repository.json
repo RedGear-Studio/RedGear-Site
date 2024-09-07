@@ -24,7 +24,7 @@
         "<p class='description' style='color: var(--secondary-text-color);'>",
         "{description}",
         "</p>",
-        "<a style='color: var(----main-color);' class='viewmore' href='https://redgear-studio.github.io/RedGear-Site/projects.html?name={name}'>View more</a>",
+        "<a style='color: var(--main-color);' class='viewmore' href='https://redgear-studio.github.io/RedGear-Site/projects.html?name={name}'>View more</a>",
         "</div></div>"
     ]
 }
