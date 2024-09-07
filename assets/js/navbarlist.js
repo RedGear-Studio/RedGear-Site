@@ -25,9 +25,11 @@ jQuery(window).on("load", function () {
 console.log(navbar.style.right)
         navbar.style.right = "0"
 console.log(navbar.style.right)
+window.alert(window.mobileCheck()+" "+navbar.style.right)
     } else {
 console.log(navbar.style.width)
         navbar.style.width = "-moz-available"
 console.log(navbar.style.width)
+window.alert(window.mobileCheck()+" "+navbar.style.width)
     }
 });
