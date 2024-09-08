@@ -9,7 +9,7 @@ const xhr3 = new XMLHttpRequest();
 xhr3.onreadystatechange = () => {
     if (xhr3.readyState === 4) {
         var data = xhr3.response
-        document.getElementById("latest-incidents").innerHTML += data
+        document.getElementById("ppp123").innerHTML = data
     }
 }
 xhr3.open('GET', "node1.adky.net:3034/incidents", true);
