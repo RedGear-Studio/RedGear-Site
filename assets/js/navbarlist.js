@@ -19,10 +19,14 @@ jQuery(window).on("load", function () {
     };
 
     var navbar = window.document.getElementById("navbarList");
+    var links = window.document.getElementsByName("links")
 
     if (window.mobileCheck() === false) {
         navbar.style.right = "0"
     } else {
         navbar.style.width = "100%"
+        for (var i in links) {
+            if (links[0]) links[0].replaceWith(window.document.createElement('br'))
+        }
     }
 });
