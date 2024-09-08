@@ -13,5 +13,5 @@ xhr3.onreadystatechange = () => {
         document.getElementById("latest-incidents").innerHTML += data
     }
 }
-xhr3.open('GET', "http://node1.adky.net:3034/incidents/", true);
+xhr3.open('GET', "node1.adky.net:3034/incidents/", true);
 xhr3.send();
