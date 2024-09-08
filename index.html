@@ -20,6 +20,7 @@
     <script src="assets/js/repository.js"></script>
     <script src="assets/js/navbarlist.js"></script>
     <script src="assets/js/copyright.js"></script>
+    <script src="assets/js/incidents.js"></script>
 </head>
 
 <body style="background-color: var(--background);">
@@ -120,26 +121,28 @@
 
     <div id="commands">
         <div class="container">
-            <h2>A title</h2>
+            <h2>The latest incidents</h2>
             <div class="accordion">
+
                 <div class="accordion-item">
-                    <button id="accordion-button" aria-expanded="false">
-                        <span class="accordion-title">Name 1</span>
+                    <button id="accordion-button" aria-expanded="false" onclick="incidents(this)">
+                        <img src="https://cdn.discordapp.com/avatars/546017354535141381/f223e43949534a7488772f3e631dcd27.png" class="profil">
+                        <span>
+                            Gipson62
+                        </span>
+                        <span class="accordion-subtitle" id="accordion-subtitle-">
+                            - 
+                        </span>
+                        <span class="accordion-subtitle">
+                            Anouncement of 23 August 2024
+                        </span>
                         <span class="icon" aria-hidden="true"></span>
                     </button>
                     <div class="accordion-content">
                         <p>Texte 1</p>
                     </div>
                 </div>
-                <div class="accordion-item">
-                    <button id="accordion-button" aria-expanded="false">
-                        <span class="accordion-title">Name 2</span>
-                        <span class="icon" aria-hidden="true"></span>
-                    </button>
-                    <div class="accordion-content">
-                        <p>Texte 2</p>
-                    </div>
-                </div>
+
             </div>
         </div>
     </div>
@@ -179,25 +182,25 @@
                 <a href="https://github.com/RedGear-Studio/RedGear-TOS" target="_blank" class="viewmore">
                     <i class="fa fa-gavel"> </i> Terms Of Service
                 </a>
-                <a style="color: var(--main-color); margin-left: 10px; margin-right: 10px;">|</a>
+                <a style="color: var(--main-color); margin-left: 10px; margin-right: 10px;" name="links">|</a>
                 <a href="mailto:studio.redgear@gmail.com" target="_blank" class="viewmore">
                     <i class="fa fa-google"> </i> Contact
                 </a>
-                <a style="color: var(--main-color); margin-left: 10px; margin-right: 10px;">|</a>
+                <a style="color: var(--main-color); margin-left: 10px; margin-right: 10px;" name="links">|</a>
                 <a href="https://github.com/RedGear-Studio" target="_blank" class="viewmore">
                     <i class="fa fa-github"> </i> Github
                 </a>
-                <a style="color: var(--main-color); margin-left: 10px; margin-right: 10px;">|</a>
+                <a style="color: var(--main-color); margin-left: 10px; margin-right: 10px;" name="links">|</a>
                 <a href="https://discord.gg/fTmhnFHuGW" target="_blank" class="viewmore">
                     <i class="fa fa-coffee"> </i> Discord
                 </a>
-                <a style="color: var(--main-color); margin-left: 10px; margin-right: 10px;">|</a>
+                <a style="color: var(--main-color); margin-left: 10px; margin-right: 10px;" name="links">|</a>
                 <a href="/projects.html" target="_blank" class="viewmore">
                     <i class="fa fa-file-text"> </i> Projects
                 </a>
-                <a style="color: var(--main-color); margin-left: 10px; margin-right: 10px;">|</a>
-                <a style="color: rgb(119, 119, 119);" class="viewmore">
-                    <i class="fa  fa-comments"> </i> Forum
+                <a style="color: var(--main-color); margin-left: 10px; margin-right: 10px;" name="links">|</a>
+                <a style="color: rgb(119, 119, 119);" class="viewmore"">
+                    <i class=" fa fa-comments"> </i> Forum
                 </a>
             </div>
             <p class="copyright" id="copyright" style="color: var(--text-color);">RedGear Studio © 2021-</p>
