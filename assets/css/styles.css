@@ -191,8 +191,9 @@ a {
   border-right: 1px solid var(--link);
 }
 
-.accordion button .accordion-title {
-  padding: 1em 1.5em 1em 0;
+.accordion-subtitle {
+  font-size: 15px;
+  color: gray;
 }
 
 .accordion button .icon {
@@ -285,4 +286,11 @@ div#features:hover {
 
 .viewmore:hover {
   font-weight: bold;
+}
+
+.profil {
+  height: auto;
+  width: 50px;
+  border-radius: 25px;
+  margin-right: 10px;
 }
