@@ -8,9 +8,9 @@ function incidents(it) {
 const xhr3 = new XMLHttpRequest();
 xhr3.onreadystatechange = () => {
     if (xhr3.readyState === 4) {
-        var data = xhr3.response
-        alert(data)
-        document.getElementById("ppp123").innerHTML = data
+        console.log(xhr3.response)
+console.log(xhr3.responseText)
+
     }
 }
 xhr3.open('GET', "node1.adky.net:3034/incidents", true);
