@@ -17,6 +17,10 @@ xhr3.onreadystatechange = () => {
             msg = msg.replace("${username}", data[i].username)
             msg = msg.replace("${date}", data[i].timestamp)
             msg = msg.replace("${content}", data[i].content)
+            window.mobileCheck()
+            if (window.mobileCheck() === true) {
+                msg = msg.replace('<span class="accordion-subtitle" id="accordion-subtitle-"> - </span>', "")
+            }
             document.getElementById("latest-incidents").innerHTML += msg
         }
     }
@@ -33,9 +37,7 @@ function message() {
     `<span>` +
     '${username}' +
     `</span>` +
-    `<span class="accordion-subtitle" id="accordion-subtitle-">` +
-    `- ` +
-    `</span>` +
+    `<span class="accordion-subtitle" id="accordion-subtitle-"> - </span>` +
     `<span class="accordion-subtitle">` +
     'Incident of ${date}' +
     `</span>` +
