@@ -8,10 +8,11 @@ function incidents(it) {
 const xhr3 = new XMLHttpRequest();
 xhr3.onreadystatechange = () => {
     if (xhr3.readyState === 4) {
+        console.log(xhr3)
         console.log(xhr3.response)
-console.log(xhr3.responseText)
+        console.log(xhr3.responseText)
 
     }
 }
-xhr3.open('GET', "node1.adky.net:3034/incidents", true);
+xhr3.open('GET', "http://node1.adky.net:3034/incidents", true);
 xhr3.send();
