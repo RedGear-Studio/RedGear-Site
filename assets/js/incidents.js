@@ -19,7 +19,7 @@ xhr3.onreadystatechange = () => {
             msg = msg.replace("${content}", data[i].content)
             window.mobileCheck()
             if (window.mobileCheck() === true) {
-                msg = msg.replace('<span class="accordion-subtitle" id="accordion-subtitle-"> - </span>', "<br>")
+                msg = msg.replace('<span class="accordion-subtitle" id="accordion-subtitle-"> - </span>', " ")
             }
             document.getElementById("latest-incidents").innerHTML += msg
         }
