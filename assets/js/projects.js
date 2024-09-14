@@ -40,6 +40,8 @@ var projectName = new URLSearchParams(window.location.search).get("name");
                     if (checkMobile()) {
                         document.getElementsByName("repository")[0].remove()
                         document.getElementsByName("repository")[0].style.display = ""
+                    } else {
+                        document.getElementsByName("repository")[1].remove()
                     }
 
 
