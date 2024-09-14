@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/navbarItems.css">
     <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/otherProject-"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/navbarlist.js"></script>
     <script src="assets/js/copyright.js"></script>
     <script src="assets/js/projects.js"></script>
@@ -58,21 +58,26 @@
     </div>
 
     <header class="d-xl-flex flex-column justify-content-xl-center align-items-xl-center"
-        style="height: 418px;text-align: center;margin: 55px;"><img class="rounded" src="assets/images/logo.png"
-            width="150" height="150" style="margin-top: 30px;">
-        <h1 class="d-xl-flex justify-content-xl-start" style="color: var(--text-color);">RedGear Studio</h1>
+        style="height: 418px;text-align: center;margin: 55px;"><img class="rounded" src="" width="150" height="150"
+            style="margin-top: 30px; display:none" name="icone">
+        <h1 class="d-xl-flex justify-content-xl-start" style="color: var(--text-color);" name="name"></h1>
         <p style="color: var(--secondary-text-color);" name="bio">
 
         </p>
-        <div class="tada animated">
+        <div class="tada">
             <div role="group" class="btn-group">
                 <a target="_blank" href="https://discord.gg/fTmhnFHuGW" class="btn btn-primary shadow-none"
                     type="button"
-                    style="margin: 5px;background-color: var(--main-color);border-color: var(--main-color);border-radius: 10px;">Discord</a>
+                    style="margin: 5px;background-color: var(--secondary);border-color: var(--main-color);border-radius: 10px;">Discord</a>
+
+                <a target="_blank" href="https://github.com/RedGear-Studio/" class="btn btn-primary shadow-none"
+                    type="button"
+                    style="margin: 5px;background-color: var(--secondary);border-color: var(--main-color);border-radius: 10px;"
+                    name="repository">View Repository</a>
 
                 <a target="_blank" href="https://github.com/RedGear-Studio" class="btn btn-primary shadow-none"
                     type="button"
-                    style="margin: 5px;background-color: var(--main-color);border-color: var(--main-color);border-radius: 10px;">Github</a>
+                    style="margin: 5px;background-color: var(--secondary);border-color: var(--main-color);border-radius: 10px;">Github</a>
             </div>
         </div>
     </header>
@@ -86,7 +91,34 @@
         </div>
     </div>
 
-    
+
+
+
+
+
+    <div class="features-boxed" style="background: var(--secondary);">
+        <div class="container" style="color: var(--main-color);">
+            <div class="row justify-content-center features" name="mainprojects">
+                <div class="col-sm-6 col-md-5 col-lg-4 item" style="flex: none;max-width: none;">
+                    <div id="features" class="box">
+
+                        <h3 name="projectName"></h3>
+                        <p name="projectDescription" class="description" style="color: var(--secondary-text-color);">No README.md as found<br>
+                        </p>
+                        <a style='color: var(--main-color);' class='viewmore' href='https://github.com/RedGear-Studio/' name="repository">View repository</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+        </div>
+    </div>
+
+
+
+
+
+
     <div style="background-color: var(--background);">
         <div style="height: 150px; overflow: hidden;">
             <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
@@ -96,32 +128,16 @@
         </div>
     </div>
 
-    <div class="features-boxed" style="background: var(--secondary);">
-        <div class="container" style="color: var(--main-color);">
-            <div class="intro">
-                <h2 class="text-center" style="color: var(--text-color);">Main projects</h2>
+    <div id="commands">
+        <div class="container">
+            <h2>The latest incidents</h2>
+            <div class="accordion" id="latest-commits">
+
+                <!-- liste des 5 derniers incidents -->
+
             </div>
-            <div class="row justify-content-center features" name="mainprojects">
-                <!-- <div class="col-sm-6 col-md-5 col-lg-4 item">
-                    <div id="features" class="box">
-                        
-                        <i class="fa fa-gamepad icon" style="color: var(--main-color);"></i><h3 class="name">Morpg</h3>
-                        <p class="description" style="color: var(--secondary-text-color);">A game<br>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-5 col-lg-4 item">
-                    <div id="features" class="box"><i class="fa fa-smile-o icon" style="color: var(--main-color);"></i>
-                        <h3 class="name">?</h3>
-                        <p class="description" style="color: var(--secondary-text-color);">?<br></p>
-                    </div>
-                </div> -->
-            </div>
-        </div>
-        <div>
         </div>
     </div>
-
 
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path fill="var(--secondary)" fill-opacity="1"
@@ -147,7 +163,7 @@
                     <i class="fa fa-coffee"> </i> Discord
                 </a>
                 <a style="color: var(--main-color); margin-left: 10px; margin-right: 10px;" name="links">|</a>
-                <a href="/projects.html" target="_blank" class="viewmore">
+                <a href="index.html#Projects" class="viewmore">
                     <i class="fa fa-file-text"> </i> Projects
                 </a>
                 <a style="color: var(--main-color); margin-left: 10px; margin-right: 10px;" name="links">|</a>
