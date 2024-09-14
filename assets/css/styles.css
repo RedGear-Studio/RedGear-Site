@@ -299,3 +299,23 @@ div#features:hover {
 .btn-group {
   display: block;
 }
+
+
+
+pre {
+	color: #7d8285;
+	background-color: black;
+	padding: 10px;
+	border-radius: 10px;
+	padding-top: initial;
+}
+
+code {
+  background-color: black;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.markdown p {
+  color: var(--secondary-text-color);
+}
