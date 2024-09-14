@@ -294,3 +294,8 @@ div#features:hover {
   border-radius: 25px;
   margin-right: 10px;
 }
+
+
+.btn-group {
+  display: block;
+}
