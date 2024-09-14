@@ -33,7 +33,7 @@ function commits(it) {
                     msg = msg.replace("${avatar}", data[i].author["avatar_url"])
                     msg = msg.replace("${username}", data[i].author.login)
                     msg = msg.replace("${date}", data[i].commit.author.date)
-                    msg = msg.replace("${content}", data[i].commit.author.message)
+                    msg = msg.replace("${content}", data[i].commit.message === "" ? "No message" : data[i].commit.message)
                     msg = msg.replace("${link}", data[i]["html_url"])
                     if (mobileCheck() === true) {
                         msg = msg.replace('<span class="accordion-subtitle" id="accordion-subtitle-"> - </span>', "<br>")
@@ -66,8 +66,8 @@ function message() {
         `<span class="icon" aria-hidden="true"></span>` +
         `</button>` +
         `<div class="accordion-content">` +
-        '<p>${content}</p>' +
+        '<p>${content}<br>' +
         '<a href="${link}">View commit</a>' +
-        `</div>` +
+        `</p></div>` +
         `</div>`
 }
