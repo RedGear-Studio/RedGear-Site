@@ -35,6 +35,7 @@ function commits(it) {
                     msg = msg.replace("${date}", data[i].commit.author.date)
                     msg = msg.replace("${content}", data[i].commit.message === "" ? "No message" : data[i].commit.message)
                     msg = msg.replace("${link}", data[i]["html_url"])
+                    document.getElementsByName("viewmore")[0].href = "https://github.com/RedGear-Studio/" + projectName + "/commits"
                     if (mobileCheck() === true) {
                         msg = msg.replace('<span class="accordion-subtitle" id="accordion-subtitle-"> - </span>', "<br>")
                     }
@@ -67,7 +68,7 @@ function message() {
         `</button>` +
         `<div class="accordion-content">` +
         '<p>${content}<br>' +
-        '<a href="${link}">View commit</a>' +
+        '<a class="viewmore" href="${link}">View commit</a>' +
         `</p></div>` +
         `</div>`
 }
