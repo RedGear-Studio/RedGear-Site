@@ -9,10 +9,6 @@ var projectName = new URLSearchParams(window.location.search).get("name");
 
 
 (async () => {
-    if (checkMobile()) {
-        document.getElementsByName("repository")[0].remove()
-        document.getElementsByName("repository")[0].style.display = ""
-    }
     if (!projectName) return window.location.href = "index.html#Projects";
     const repositoryFetch = await fetch("https://redgear-studio.github.io/RedGear-Site/assets/json/repository.json").then(rep => rep.json());
     const repository = { name: [] }
@@ -40,6 +36,11 @@ var projectName = new URLSearchParams(window.location.search).get("name");
                     readme = readme.filter(f => f.name === "README.md")
                     if (readme[0]) readme = await fetch("https://raw.githubusercontent.com/RedGear-Studio/" + projectName + "/main/README.md").then(rep => rep.text());
 
+
+                    if (checkMobile()) {
+                        document.getElementsByName("repository")[0].remove()
+                        document.getElementsByName("repository")[0].style.display = ""
+                    }
 
 
                     document.getElementsByName("icone")[0].src = images
