@@ -31,7 +31,7 @@ var projectName = new URLSearchParams(window.location.search).get("name");
 
 
 
-                    document.getElementsByName("icone")[0].src = images
+                    document.getElementsByName("icone")[0].innerHTML = '<img class="rounded" src="'+images+'" width="150" height="150" style="margin-top: 30px;" name="icone">'
                     document.getElementsByName("icone")[0].style.display = "block"
                     document.getElementsByName("name")[0].innerText = data[0].name
                     document.getElementsByName("projectName")[0].innerText = data[0].name
