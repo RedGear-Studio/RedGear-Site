@@ -27,8 +27,7 @@ function commits(it) {
         xhr5.onreadystatechange = () => {
             if (xhr5.readyState === 4) {
                 var data = JSON.parse(xhr5.response)
-                // document.getElementById(this.)
-                data = data.msg
+                var coms = 0
                 for (var i in data) {
                     var msg = message()
                     msg = msg.replace("${avatar}", data[i].author["avatar_url"])
@@ -39,6 +38,8 @@ function commits(it) {
                     if (mobileCheck() === true) {
                         msg = msg.replace('<span class="accordion-subtitle" id="accordion-subtitle-"> - </span>', "<br>")
                     }
+                    if (coms >= 5) return;
+                    coms += 1
                     document.getElementById("latest-commits").innerHTML += msg
                 }
             }
