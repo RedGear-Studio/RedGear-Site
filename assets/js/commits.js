@@ -62,7 +62,7 @@ function message() {
         `</span>` +
         `<span class="accordion-subtitle" id="accordion-subtitle-"> - </span>` +
         `<span class="accordion-subtitle">` +
-        'Commits of ${date}' +
+        'Commit of ${date}' +
         `</span>` +
         `<span class="icon" aria-hidden="true"></span>` +
         `</button>` +
