@@ -32,7 +32,7 @@ function commits(it) {
                     var msg = message()
                     msg = msg.replace("${avatar}", data[i].author["avatar_url"])
                     msg = msg.replace("${username}", data[i].author.login)
-                    msg = msg.replace("${date}", data[i].commit.author.date)
+                    msg = msg.replace("${date}", moment(data[i].commit.author.date).format("DD MMMM YYYY HH:mm")) 
                     msg = msg.replace("${content}", data[i].commit.message === "" ? "No message" : data[i].commit.message)
                     msg = msg.replace("${link}", data[i]["html_url"])
                     document.getElementsByName("viewmore")[0].href = "https://github.com/RedGear-Studio/" + projectName + "/commits"
